@@ -1,15 +1,16 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - entry
+ * main - PID
  *
- * Return: nothing
+ * Return: Always 0.
  */
 int main(void)
 {
-	unsigned int pid = getpid();
+	pid_t my_pid;
 
-	printf("Proccess id: %d\n", pid);
-
-	return(0);
+	my_pid = getpid();
+	printf("PID: %u\n", my_pid);
+	return (0);
 }
