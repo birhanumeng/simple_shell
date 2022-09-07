@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
- * main - PID
+ * main - entry
  *
- * Return: Always 0.
+ * Return: nothing
  */
 int main(void)
 {
